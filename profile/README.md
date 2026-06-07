@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Free-The-Ai/free-ai/master/site/public/FreeTheAi.png" alt="FreeTheAi" width="150" />
+<img src="https://raw.githubusercontent.com/Free-The-Ai/free-ai/master/freetheai-transparent-logo-responsive-same-colors.svg" alt="FreeTheAi" width="440" />
 
 # FreeTheAi
 
