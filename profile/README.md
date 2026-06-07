@@ -1,38 +1,54 @@
-# Free The AI
+<div align="center">
 
-FreeTheAi is an OpenAI-compatible AI API for people who want to build, test, roleplay, and automate without getting stuck behind credit-card gates.
+<img src="https://raw.githubusercontent.com/Free-The-Ai/free-ai/master/site/public/FreeTheAi.png" alt="FreeTheAi" width="150" />
 
-We keep the public surface simple:
+# FreeTheAi
 
-- One API shape that works with OpenAI-compatible clients.
-- A growing model catalog for chat, coding, roleplay, search, and tool-use workflows.
-- Discord-based key access, usage visibility, and community support.
-- Guides for wiring the API into coding agents, editors, roleplay clients, and custom apps.
+### OpenAI-compatible AI access for builders, roleplayers, tinkerers, and coding agents.
 
-## Start Here
+FreeTheAi gives the community a simple API surface for using AI models without forcing every experiment through a credit-card gate.
 
-| What you need | Link |
+<br>
+
+[![Website](https://img.shields.io/badge/Website-freetheai.xyz-111111?style=for-the-badge)](https://freetheai.xyz)
+[![Docs](https://img.shields.io/badge/Docs-Quickstart-0B5FFF?style=for-the-badge)](https://freetheai.xyz/docs/)
+[![Models](https://img.shields.io/badge/Models-50%2B-00A86B?style=for-the-badge)](https://freetheai.xyz/models/)
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/secrets)
+
+[Website](https://freetheai.xyz) | [Quickstart](https://freetheai.xyz/quickstart/) | [Setup Guides](https://freetheai.xyz/setup/) | [Model Catalog](https://freetheai.xyz/models/) | [Pricing](https://freetheai.xyz/pricing/) | [Status](https://freetheai.xyz/status/)
+
+</div>
+
+---
+
+## What This Is
+
+FreeTheAi is a community AI API project built around a practical idea: one familiar OpenAI-compatible interface, many usable model routes, and setup docs that work with real clients.
+
+It is made for:
+
+| Use case | What FreeTheAi focuses on |
 | --- | --- |
-| Website | [freetheai.xyz](https://freetheai.xyz) |
-| Docs | [freetheai.xyz/docs](https://freetheai.xyz/docs/) |
-| Models | [freetheai.xyz/models](https://freetheai.xyz/models/) |
-| Pricing | [freetheai.xyz/pricing](https://freetheai.xyz/pricing/) |
-| Public API repo | [Free-The-Ai/free-ai](https://github.com/Free-The-Ai/free-ai) |
-| Coding-agent resources | [Free-The-Ai/free-code](https://github.com/Free-The-Ai/free-code) |
+| Coding agents | OpenAI-compatible setup guides for editors, CLIs, and agent workflows |
+| Roleplay clients | Roleplay-friendly docs, long-context guidance, and model notes |
+| App builders | Chat completions, streaming, tool-call compatibility, and catalog metadata |
+| Experimenters | A low-friction way to test model behavior without rebuilding every client |
 
-## What We Build
+## Public Repos
 
-FreeTheAi focuses on practical access layers around AI:
+| Repo | Purpose |
+| --- | --- |
+| [Free-The-Ai/free-ai](https://github.com/Free-The-Ai/free-ai) | Public website, docs, quickstarts, setup guides, examples, and model catalog resources |
+| [Free-The-Ai/free-code](https://github.com/Free-The-Ai/free-code) | Coding-agent resources for connecting FreeTheAi to developer tools and workflows |
 
-- API compatibility for common chat-completion workflows.
-- Streaming responses for clients that expect SSE.
-- Tool-call and structured-output compatibility where models support it.
-- Roleplay-friendly routing and docs for long-context clients.
-- Public catalog metadata so users can pick models without guessing.
+## API Shape
 
-## For Builders
+If your client supports an OpenAI-compatible base URL, the setup is usually this simple:
 
-Use the API like a standard OpenAI-compatible endpoint:
+```text
+Base URL: https://api.freetheai.xyz/v1
+Auth:     Bearer YOUR_FREETHEAI_KEY
+```
 
 ```bash
 curl https://api.freetheai.xyz/v1/chat/completions \
@@ -41,16 +57,42 @@ curl https://api.freetheai.xyz/v1/chat/completions \
   -d '{
     "model": "MODEL_ALIAS",
     "messages": [
-      { "role": "user", "content": "Say hi from FreeTheAi." }
+      {
+        "role": "user",
+        "content": "Say hi from FreeTheAi."
+      }
     ],
     "stream": true
   }'
 ```
 
-Check the docs and model catalog for current aliases, access rules, and client setup notes.
+## Core Links
 
-## Community
+| Need | Go here |
+| --- | --- |
+| Get started | [Quickstart](https://freetheai.xyz/quickstart/) |
+| See available models | [Model Catalog](https://freetheai.xyz/models/) |
+| Connect a coding tool | [Setup Guides](https://freetheai.xyz/setup/) |
+| Read API docs | [Docs](https://freetheai.xyz/docs/) |
+| Join the community | [Discord](https://discord.gg/secrets) |
+| Check API status | [Status](https://freetheai.xyz/status/) |
 
-FreeTheAi is community-driven. If you use the API, build something with it, or want to help improve docs and client setup guides, start with the public repos above and the website.
+## Project Direction
 
-Star the repos if the project helps you.
+We care about access that is actually useful:
+
+- Keep the API familiar for OpenAI-compatible clients.
+- Keep public model metadata readable and current.
+- Keep setup docs practical, not theoretical.
+- Keep roleplay, coding, and app-builder workflows documented separately.
+- Keep public-facing output clean and free of internal provider details.
+
+---
+
+<div align="center">
+
+**Build with it. Break your setup less. Share what works.**
+
+[Star `free-ai`](https://github.com/Free-The-Ai/free-ai) | [Join Discord](https://discord.gg/secrets) | [Open the docs](https://freetheai.xyz/docs/)
+
+</div>
