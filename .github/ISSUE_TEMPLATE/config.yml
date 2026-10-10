@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question in Discord
+    url: https://discord.gg/secrets
+    about: Get help from the community and the FreeTheAI team. Include your error id.
+  - name: Documentation
+    url: https://freetheai.org/docs
+    about: Read the API docs, setup guides, and model list before you open an issue.
+  - name: Setup guides for apps and coding agents
+    url: https://freetheai.org/setup
+    about: Step-by-step setup for SillyTavern, JanitorAI, Cline, Claude Code, and more.
+  - name: Report a security problem
+    url: mailto:vibheksoni@engineer.com
+    about: Please report vulnerabilities privately by email, not in a public issue.

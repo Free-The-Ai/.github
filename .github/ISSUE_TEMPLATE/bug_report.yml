@@ -1,0 +1,77 @@
+name: Bug report
+description: Something in a FreeTheAI repository is not working as documented.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please do not paste your API key here. Replace it with `ftai_...`.
+        For help using the API, see the [docs](https://freetheai.org/docs) or ask in [Discord](https://discord.gg/secrets).
+  - type: input
+    id: repository
+    attributes:
+      label: Repository and version
+      description: Which repository, and which version or commit? For example, freetheai-python 0.1.0.
+      placeholder: freetheai-python 0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - SDK client
+        - API behaviour
+        - Documentation
+        - Examples or cookbook
+        - Website or docs site
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The smallest code or command that shows the problem.
+      render: shell
+  - type: input
+    id: error-id
+    attributes:
+      label: Error id
+      description: The error id from the error message, the response body, or the X-Error-ID header. It helps us find the exact failure.
+      placeholder: freetheai-abc123
+  - type: input
+    id: model
+    attributes:
+      label: Model ID
+      placeholder: fta/zai/glm-5.3
+  - type: dropdown
+    id: env
+    attributes:
+      label: Runtime
+      options:
+        - Python
+        - Node.js
+        - Bun
+        - Deno
+        - Browser
+        - Go
+        - curl or other HTTP client
+        - Other
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the existing issues.
+          required: true
+        - label: I removed my API key and other secrets from this report.
+          required: true
